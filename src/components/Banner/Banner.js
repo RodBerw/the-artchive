@@ -12,7 +12,7 @@ export default function Banner(){
                             <Text>1</Text>
                         </Box>
                         <Box flex="1" h={{base:"350px", md:"735px", xl:"735px"}}>
-                            <Grid margin="0 0 0 15vw" templateRows="1fr 1fr" h="100%">
+                            <Grid margin="0 0 0 20vw" templateRows="1fr 1fr" h="100%">
                                 <Flex flexDirection="column">
                                     <Text mt="10px" color="white" fontFamily="Imbue, serif" letterSpacing="wide" lineHeight="1em" fontSize={{base:"2.5em", md:"5em", xl:"7.5em"}}>ART<br/> COLECTION</Text>
                                     <Text flex="1" w="75%" color="white" fontSize={{base:"1em", md:"1.25em", xl:"1.5em"}} fontWeight="light" lineHeight="1.25em">LEARN FROM THE OLD MASTERS</Text>
