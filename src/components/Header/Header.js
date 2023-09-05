@@ -1,7 +1,7 @@
 import { Box, Flex, Text, Icon } from "@chakra-ui/react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import Menu from "../Menu/Menu";
+import Menu from "./Menu";
 
 export default function Header() {
 
@@ -29,7 +29,7 @@ export default function Header() {
             <Text
               fontFamily="Bacasime Antique, serif;"
               color="white"
-              fontSize="1.75em"
+              fontSize={{base:"1.25em", md:"1.5em", xl:"1.75em"}}
               fontWeight="500"
             >
               THE ARTCHIVE
