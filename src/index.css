@@ -1,19 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat:wght@100&family=Noto+Serif+Display&display=swap");
 @font-face {
-  font-family: 'Voga';
-  src: url('./fonts/Voga-Medium.otf') format('otf');
+  font-family: "Voga";
+  src: url("./fonts/Voga-Medium.otf") format("otf");
 }
-@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz@10..100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Tangerine&family=Imbue:opsz@10..100&display=swap");
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<head>
-
-body {
+<head
+  > <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+  /
+  > </head
+  > body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Voga", "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Cormorant Garamond", "Voga",
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

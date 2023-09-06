@@ -4,16 +4,15 @@ import { useState } from "react";
 import Menu from "./Menu";
 
 export default function Header() {
-
   const [menuIconRot, setMenuIconRot] = useState(0);
   const [menuXPos, setMenuXPos] = useState(100);
 
-  function menuTabToggle(){
-    setMenuIconRot(menuIconRot === 0 ? -90 : 0)
-    setMenuXPos(menuXPos === 100 ? 0 : 100)
-    console.log(menuXPos)
+  function menuTabToggle() {
+    setMenuIconRot(menuIconRot === 0 ? -90 : 0);
+    setMenuXPos(menuXPos === 100 ? 0 : 100);
+    console.log(menuXPos);
   }
-  
+
   return (
     <div>
       <Box w="100%" position="fixed">
@@ -29,8 +28,10 @@ export default function Header() {
             <Text
               fontFamily="Bacasime Antique, serif;"
               color="white"
-              fontSize={{base:"1.25em", md:"1.5em", xl:"1.75em"}}
+              fontSize={{ base: "1.25em", md: "1.5em", xl: "1.75em" }}
               fontWeight="500"
+              textAlign="center"
+              whiteSpace="nowrap"
             >
               THE ARTCHIVE
             </Text>
@@ -42,10 +43,19 @@ export default function Header() {
             display="flex"
             alignItems="center"
           >
-            <Icon as={MenuIcon} onClick={menuTabToggle} _hover={{cursor:"pointer"}} color="#ffffff" w="40px" h="40px" transition="transform .25s"  transform={`rotate(${menuIconRot}deg)`}/>
+            <Icon
+              as={MenuIcon}
+              onClick={menuTabToggle}
+              _hover={{ cursor: "pointer" }}
+              color="#ffffff"
+              w="40px"
+              h="40px"
+              transition="transform .25s"
+              transform={`rotate(${menuIconRot}deg)`}
+            />
           </Box>
         </Flex>
-        <Menu menuXPos={menuXPos}/>
+        <Menu menuXPos={menuXPos} />
       </Box>
     </div>
   );

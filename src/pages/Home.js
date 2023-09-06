@@ -1,9 +1,16 @@
 import { Box, Flex, Text, Icon } from "@chakra-ui/react";
 import Banner from "../components/Banner/Banner";
+import StartButton from "../components/Banner/StartButton";
 export default function Home() {
-  return (<div>
+  return (
+    <div>
       <Box>
-        <Banner/>
+        <Banner />
+        <StartButton />
+        <Box bg="black" w="100%" h="500px">
+          1
+        </Box>
       </Box>
-  </div>)
+    </div>
+  );
 }
