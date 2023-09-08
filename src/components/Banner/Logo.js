@@ -7,7 +7,7 @@ export default function Logo() {
         <Box position="relative" zIndex="1">
           <Image
             position="absolute"
-            transform="translate(-15%, -35%) rotate(15deg)"
+            transform="translate(-20%, -35%) rotate(15deg)"
             w="90%"
             src="/assets/paper.png"
           ></Image>
@@ -15,7 +15,7 @@ export default function Logo() {
             position="absolute"
             flexDirection="column"
             justify="center"
-            w="60%"
+            w="50%"
           >
             <Flex alignItems="center">
               <Image src="/assets/logo.png" ml="10%" alt="Logo" w="35%"></Image>
@@ -24,7 +24,7 @@ export default function Logo() {
                 letterSpacing="wide"
                 lineHeight="1em"
                 fontWeight="200"
-                fontSize="3.5vw"
+                fontSize="3.2vw"
               >
                 THE
                 <br /> ARTCHIVE
@@ -35,6 +35,7 @@ export default function Logo() {
                 fontFamily="Tangerine, cursive"
                 fontSize="2vw"
                 textAlign="right"
+                lineHeight="2.5vw"
               >
                 "A taste for simplicity cannot endure for long."
                 <br /> Eugene Delacroix
