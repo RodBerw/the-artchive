@@ -65,10 +65,10 @@ export default function Banner() {
                     writing-mode="vertical-rl"
                     mb="4%"
                     mr="5%"
-                    w="75%"
+                    w="100%"
                     color="white"
-                    fontSize={{ base: ".5em", md: ".75em", xl: "1em" }}
-                    letterSpacing="widest"
+                    fontSize={{ base: ".25em", md: ".5em", xl: ".75em" }}
+                    letterSpacing="5px"
                     lineHeight="1.25em"
                   >
                     MADE BY RODOLFO BERWANGER

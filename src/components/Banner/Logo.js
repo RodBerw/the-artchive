@@ -7,7 +7,7 @@ export default function Logo() {
         <Box position="relative" zIndex="1">
           <Image
             position="absolute"
-            transform="translate(-25%, -40%) rotate(15deg)"
+            transform="translate(-15%, -35%) rotate(15deg)"
             w="90%"
             src="/assets/paper.png"
           ></Image>
@@ -15,10 +15,10 @@ export default function Logo() {
             position="absolute"
             flexDirection="column"
             justify="center"
-            w="50%"
+            w="60%"
           >
             <Flex alignItems="center">
-              <Image src="/assets/logo.png" ml="5%" alt="Logo" w="35%"></Image>
+              <Image src="/assets/logo.png" ml="10%" alt="Logo" w="35%"></Image>
               <Text
                 fontFamily="Cormorant Garamond, serif"
                 letterSpacing="wide"
