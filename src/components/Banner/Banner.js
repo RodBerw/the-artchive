@@ -4,13 +4,13 @@ import Logo from "./Logo";
 export default function Banner() {
   return (
     <div>
-      <Box h="900px">
+      <Box h={{ base: "40vh", md: "85vh", xl: "85vh" }} minH="300px">
         <Box w="100%" h="100%" position="relative" zIndex="-1">
           <Image
             position="absolute"
             objectFit="cover"
             w="100%"
-            h={{ base: "50%", md: "100%", xl: "100%" }}
+            h="100%"
             src="/assets/banner-background.jpg"
             alt="Banner"
           ></Image>

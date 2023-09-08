@@ -15,12 +15,14 @@ export default function Header() {
 
   return (
     <div>
-      <Box w="100%" position="fixed">
+      <Box w="100%">
         <Flex
+          position="fixed"
           w="100%"
-          bg="#0B1C24"
-          justify="space-between"
           h="50px"
+          bg="#0B1C24"
+          zIndex="999"
+          justify="space-between"
           align="center"
         >
           <Box flex="1"></Box>
