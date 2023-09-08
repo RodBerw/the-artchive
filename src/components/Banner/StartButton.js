@@ -5,13 +5,17 @@ export default function StartButton() {
     <div>
       <Box>
         <Flex
-          position="absolute"
           w="100%"
+          h="300px"
+          bg="black"
           justifyContent="center"
-          top="850px"
           flexDirection="column"
         >
           <Box
+            position="absolute"
+            justifySelf="center"
+            left="0"
+            right="0"
             m="auto"
             zIndex="2"
             w="300px"
@@ -35,13 +39,19 @@ export default function StartButton() {
           </Box>
           <Box
             zIndex="3"
-            position="absolute"
             w="100%"
             h="80%"
             transform="translateY(20%)"
             bg="linear-gradient(180deg, rgba(0,0,0,0) 0%, black 50%)"
           ></Box>
         </Flex>
+        <Box
+            position="absolute"
+            zIndex="1"
+            w="100%"
+            h="100px"
+            bg="linear-gradient(0deg, rgba(0,0,0,0) 0%, black 50%)"
+          ></Box>
       </Box>
     </div>
   );

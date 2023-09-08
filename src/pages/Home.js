@@ -7,7 +7,7 @@ export default function Home() {
       <Box>
         <Banner />
         <StartButton />
-        <Box bg="black" w="100%" h="500px">
+        <Box bg="red" w="100%" h="500px">
           1
         </Box>
       </Box>
