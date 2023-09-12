@@ -10,15 +10,11 @@ export default function Logo() {
             transform="translate(-20%, -35%) rotate(15deg)"
             w="90%"
             src="/assets/paper.png"
+            minW="150px"
           ></Image>
-          <Flex
-            position="absolute"
-            flexDirection="column"
-            justify="center"
-            w="50%"
-          >
+          <Flex position="absolute" flexDirection="column" justify="center">
             <Flex alignItems="center">
-              <Image src="/assets/logo.png" ml="10%" alt="Logo" w="35%"></Image>
+              <Image src="/assets/logo.png" ml="1%" alt="Logo" w="25%"></Image>
               <Text
                 fontFamily="Cormorant Garamond, serif"
                 letterSpacing="wide"
@@ -33,9 +29,9 @@ export default function Logo() {
             <Flex justifyContent="center">
               <Text
                 fontFamily="Tangerine, cursive"
-                fontSize="2vw"
                 textAlign="right"
-                lineHeight="2.5vw"
+                fontSize="2vw"
+                mr="30%"
               >
                 "A taste for simplicity cannot endure for long."
                 <br /> Eugene Delacroix

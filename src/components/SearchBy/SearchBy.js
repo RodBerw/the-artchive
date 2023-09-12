@@ -4,16 +4,9 @@ import Category from "./Category";
 export default function SearchBy() {
   return (
     <div>
-      <Box
-        id="searchBy"
-        w="80%"
-        h="45vw"
-        bg="black"
-        m="auto"
-        mt="250px"
-        position="relative"
-      >
+      <Box w="80%" h="45vw" bg="black" m="auto" mt="250px" position="relative">
         <Flex
+          id="searchBy"
           w="100%"
           h="100%"
           p="5%"

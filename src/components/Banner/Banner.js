@@ -30,7 +30,7 @@ export default function Banner() {
             <Box flex="1">
               <Logo />
             </Box>
-            <Box flex="1" h={{ base: "50%", md: "100%", xl: "100%" }}>
+            <Box flex="1" h={{ base: "90%", md: "100%", xl: "100%" }}>
               <Grid margin="0 0 0 22vw" templateRows="1fr 1fr" h="100%">
                 <Flex flexDirection="column">
                   <Text
@@ -51,6 +51,7 @@ export default function Banner() {
                     fontSize={{ base: "1em", md: "1.25em", xl: "1.5em" }}
                     fontWeight="light"
                     lineHeight="1.25em"
+                    letterSpacing="5px"
                   >
                     LEARN FROM THE OLD MASTERS
                   </Text>
@@ -64,10 +65,10 @@ export default function Banner() {
                     textAlign="right"
                     writing-mode="vertical-rl"
                     mb="4%"
-                    mr="5%"
+                    mr="10%"
                     w="100%"
                     color="white"
-                    fontSize={{ base: ".25em", md: ".5em", xl: ".75em" }}
+                    fontSize={{ base: ".5em", md: ".75em", xl: "1em" }}
                     letterSpacing="5px"
                     lineHeight="1.25em"
                   >
