@@ -6,7 +6,7 @@ export default function StartButton() {
     const elementSearchBy = document.getElementById("searchBy");
 
     if (elementSearchBy) {
-      elementSearchBy.scrollIntoView({ behavior: "smooth" });
+      elementSearchBy.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }
 
