@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 export default function StartButton() {
   function Scroll() {
-    const elementSearchBy = document.getElementById("searchBy");
+    const elementSearchBy = document.getElementById("about");
 
     if (elementSearchBy) {
       elementSearchBy.scrollIntoView({ behavior: "smooth", block: "center" });
