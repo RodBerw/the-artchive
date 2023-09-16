@@ -12,13 +12,14 @@ export default function SearchBy() {
           p="5%"
           flexDirection="column"
           color="white"
+          fontSize="1vw"
           letterSpacing={{ base: "5px", md: "7.5px", xl: "10px" }}
           position="relative"
         >
           <Box flex="1">
             <Text
               textAlign="right"
-              fontSize={{ base: ".4em", md: ".75em", xl: "1em" }}
+              
             >
               WHAT
               <br /> ARE
@@ -30,7 +31,7 @@ export default function SearchBy() {
           <Flex flex="1">
             <Text
               alignSelf="end"
-              fontSize={{ base: ".4em", md: ".75em", xl: "1em" }}
+              
             >
               THE ARTCHIVE
             </Text>
