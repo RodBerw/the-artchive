@@ -4,7 +4,7 @@ import Category from "./Category";
 export default function SearchBy() {
   return (
     <div>
-      <Flex w="80%"  bg="black" m="auto" mt={{base: "100px", md:"200px", xl:"250px"}} position="relative" justifyContent="center">
+      <Flex minW="500px" w="80%"  bg="black" m="auto" mt={{base: "100px", md:"200px", xl:"250px"}} position="relative" justifyContent="center">
         <Flex
           id="searchBy"
           w="100%"
@@ -48,6 +48,7 @@ export default function SearchBy() {
           p="10%"
           mt="5%"
           flexWrap="wrap"
+          rowGap="10px"
         >
           <Category marginTop="start" img="artists.jpg" text="ARTISTS"/>
           <Category marginTop="center" img="artworks.jpg" text="ARTWORKS"/>
