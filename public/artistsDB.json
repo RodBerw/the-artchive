@@ -1,10 +1,5 @@
 {
-<<<<<<< HEAD
   "artists": [
-=======
-    "artists":
-    [
->>>>>>> 7b4c6aa (Starting json database tests)
     {
       "img": "pintor1.jpg",
       "date": "1452-1519",
@@ -56,8 +51,4 @@
       "artist": "Jean-Michel Basquiat"
     }
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7b4c6aa (Starting json database tests)
