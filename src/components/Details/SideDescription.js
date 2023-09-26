@@ -11,6 +11,7 @@ export default function SideDescription() {
         h="100vh"
         justifyContent="right"
         alignItems="center"
+        pointerEvents="none"
       >
         <Text
           position="fixed"
@@ -21,6 +22,7 @@ export default function SideDescription() {
           transform="scale(-1,-1)"
           style={{ writingMode: "vertical-rl" }}
           mr="1vw"
+          pointerEvents="auto"
         >
           HOME
         </Text>
