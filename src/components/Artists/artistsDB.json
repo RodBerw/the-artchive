@@ -1,0 +1,55 @@
+{
+    "artists":
+    [
+    {
+      "img": "pintor1.jpg",
+      "date": "1452-1519",
+      "artist": "Leonardo da Vinci"
+    },
+    {
+      "img": "pintor2.jpg",
+      "date": "1599-1660",
+      "artist": "Rembrandt Harmenszoon van Rijn"
+    },
+    {
+      "img": "pintor3.jpg",
+      "date": "1840-1926",
+      "artist": "Claude Monet"
+    },
+    {
+      "img": "pintor4.jpg",
+      "date": "1864-1901",
+      "artist": "Henri de Toulouse-Lautrec"
+    },
+    {
+      "img": "pintor5.jpg",
+      "date": "1867-1916",
+      "artist": "Frida Kahlo"
+    },
+    {
+      "img": "pintor6.jpg",
+      "date": "1881-1973",
+      "artist": "Pablo Picasso"
+    },
+    {
+      "img": "pintor7.jpg",
+      "date": "1893-1957",
+      "artist": "Fernand Léger"
+    },
+    {
+      "img": "pintor8.jpg",
+      "date": "1898-1967",
+      "artist": "Salvador Dalí"
+    },
+    {
+      "img": "pintor9.jpg",
+      "date": "1904-1989",
+      "artist": "Jackson Pollock"
+    },
+    {
+      "img": "pintor10.jpg",
+      "date": "1928-1987",
+      "artist": "Jean-Michel Basquiat"
+    }
+  ]
+}
