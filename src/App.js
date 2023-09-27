@@ -7,7 +7,6 @@ import Header from "./components/Header/Header";
 import Outro from "./pages/Outro";
 import NotFound from "./pages/NotFound";
 import { Box } from "@chakra-ui/react";
-import ArtistsDB from "./components/Artists/artistsDB.json";
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Route path="/" Component={Home} />
         <Route path="/artists" Component={Artists}/>
         <Route path="/outro" Component={Outro} />
-        <Route path="/artistsDB" Component={ArtistsDB} />
         <Route path="*" Component={NotFound} />
       </Routes>
     </Router>
