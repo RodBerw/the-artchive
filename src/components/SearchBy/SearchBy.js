@@ -44,15 +44,15 @@ export default function SearchBy() {
           top="0"
           zIndex="1"
           w={{base:"80%", md:"100%"}}
-          h="90%"
+          h={{base:"90%", xl:"550px"}}
           p="10%"
           mt="5%"
           flexWrap="wrap"
           rowGap="10px"
         >
-          <Category marginTop="start" img="artists.jpg" text="ARTISTS"/>
-          <Category marginTop="center" img="artworks.jpg" text="ARTWORKS"/>
-          <Category marginTop="end" img="articles.jpg" text="ARTCLES & REVIEWS"/>
+          <Category align="start" img="artists.jpg" text="ARTISTS"/>
+          <Category align="center" img="artworks.jpg" text="ARTWORKS"/>
+          <Category align="end" img="articles.jpg" text="ARTCLES & REVIEWS"/>
         </Flex>
       </Flex>
     </div>

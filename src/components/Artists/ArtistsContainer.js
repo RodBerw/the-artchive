@@ -6,7 +6,8 @@ import AddIcon from '@mui/icons-material/Add';
 
 export default function ArtisitsContainer(){
     const [artists, setArtists] = useState([]);
-    const [plusIconRot, setPlusIconRot] = useState(0);
+    const [plusIconSize, setPlusIconSize] = useState(1);
+    const [opacity, setOpacity] = useState(100);
     const url = "artistsDB.json"
     const variant = useBreakpointValue(
         {
@@ -33,8 +34,9 @@ export default function ArtisitsContainer(){
         
     },[]);
     
-    function plusIconTabToggle() {
-        setPlusIconRot(plusIconRot === 0 ? -90 : 0);
+    function addTabToggle() {
+        setPlusIconSize(plusIconSize === 1 ? 1.1 : 1);
+        setOpacity(opacity === 100 ? 0 : 100);
       }
 
     return(
@@ -46,11 +48,13 @@ export default function ArtisitsContainer(){
                             <ArtistCard img={artist.img} date={artist.date} name={artist.artist}/>
                         </Box>
                     ))}
-                    <Square bgSize="100%" aspectRatio="1" bgColor="#00101B" bgImg="linear-gradient(#052c47, #00101B)">
-                        <Center>
-                            <Box w="100%" h="100%" onClick={{}} _hover={{ cursor: "pointer" } && plusIconTabToggle()}>
-                                <Icon as={AddIcon} color="#094763" w="150px" h="150px" transition="transform .25s" transform={`rotate(${plusIconRot}deg)`}/>
-                            </Box>
+                    <Square bgSize="100%" aspectRatio="1">
+                        <Center position="relative" w="100%" h="100%" onClick={{}} onMouseEnter={() => addTabToggle()} onMouseLeave={() => addTabToggle()} _hover={{ cursor: "pointer" }}>
+                            <Icon zIndex="2" as={AddIcon} color="#133749" w="150px" h="150px" transition="transform .25s" transform={`scale(${plusIconSize});`}/>
+                            <Flex w="100%" h="100%" position="absolute">
+                                <Square zIndex="1" position="absolute" size="100%" bgColor="#00070b" transition="opacity .25s" bgImg="linear-gradient(#00070b, #0a2031)" opacity={`${opacity}%`}></Square>
+                                <Square position="absolute" size="100%" bgColor="#00070b" bgImg="linear-gradient(#00070b, #0e2d45)"></Square>
+                            </Flex>
                         </Center>
                     </Square>
                 </Grid>
