@@ -10,7 +10,6 @@ export default function Header() {
   function menuTabToggle() {
     setMenuIconRot(menuIconRot === 0 ? -90 : 0);
     setMenuXPos(menuXPos === 100 ? 0 : 100);
-    console.log(menuXPos);
   }
 
   return (
