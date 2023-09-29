@@ -62,7 +62,7 @@ export default function ArtisitsContainer() {
               <ArtistCard
                 img={artist.img}
                 date={artist.date}
-                name={artist.artist}
+                name={artist.name}
               />
             </Box>
           ))}
