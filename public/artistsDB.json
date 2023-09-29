@@ -1,54 +1,64 @@
 {
   "artists": [
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1452-1519",
-      "artist": "Leonardo da Vinci"
+      "name": "Leonardo da Vinci"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1599-1660",
-      "artist": "Rembrandt Harmenszoon van Rijn"
+      "name": "Rembrandt Harmenszoon van Rijn"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1840-1926",
-      "artist": "Claude Monet"
+      "name": "Claude Monet"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1864-1901",
-      "artist": "Henri de Toulouse-Lautrec"
+      "name": "Henri de Toulouse-Lautrec"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1867-1916",
-      "artist": "Frida Kahlo"
+      "name": "Frida Kahlo"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1881-1973",
-      "artist": "Pablo Picasso"
+      "name": "Pablo Picasso"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1893-1957",
-      "artist": "Fernand Léger"
+      "name": "Fernand Léger"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1898-1967",
-      "artist": "Salvador Dalí"
+      "name": "Salvador Dalí"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1904-1989",
-      "artist": "Jackson Pollock"
+      "name": "Jackson Pollock"
     },
     {
+      "id":0,
       "img": "/assets/artists.jpg",
       "date": "1928-1987",
-      "artist": "Jean-Michel Basquiat"
+      "name": "Jean-Michel Basquiat"
     }
   ]
 }
