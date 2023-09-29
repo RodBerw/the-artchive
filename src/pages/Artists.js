@@ -6,11 +6,9 @@ import ArtisitsContainer from "../components/Artists/ArtistsContainer";
 export default function Home() {
   return (
     <div>
-      <Box h="3000px">
         <Background />
-        <SideDescription />
+        <SideDescription text="ARTISTS"/>
         <ArtisitsContainer/>
-      </Box>
     </div>
   );
 }

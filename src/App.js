@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Artists from "./pages/Artists"
 import Header from "./components/Header/Header";
 import Outro from "./pages/Outro";
+import Biography from "./pages/Biography";
 import NotFound from "./pages/NotFound";
 import { Box } from "@chakra-ui/react";
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/artists" Component={Artists}/>
+        <Route path="/biography" Component={Biography}/>
         <Route path="/outro" Component={Outro} />
         <Route path="*" Component={NotFound} />
       </Routes>

@@ -44,7 +44,7 @@ export default function SearchBy() {
           top="0"
           zIndex="1"
           w={{base:"80%", md:"100%"}}
-          h={{base:"90%", xl:"550px"}}
+          h={{base:"90%", xl:"42vw"}}
           p="10%"
           mt="5%"
           flexWrap="wrap"
