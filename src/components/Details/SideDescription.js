@@ -1,6 +1,8 @@
 import { Box, Center, Flex, Text } from "@chakra-ui/react";
+import { useState } from "react";
 
-export default function SideDescription() {
+export default function SideDescription(props) {
+  const [text, setText] = useState(props.text);
   return (
     <div>
       <Flex
@@ -24,7 +26,7 @@ export default function SideDescription() {
           mr="1vw"
           pointerEvents="auto"
         >
-          HOME
+          {text}
         </Text>
       </Flex>
     </div>

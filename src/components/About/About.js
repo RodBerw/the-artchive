@@ -22,7 +22,7 @@ export default function About() {
                 <Text textStyle="large">START</Text>
                 <Text textStyle="basic">Whether you're an artist, collector, or simply an admirer of art, begin your creative journey with ArtCards today!</Text>
               </Flex>
-              <Image w="45vw" minW="200px" bottom="-150px" right="-30%" position="absolute" zIndex="2" src="./assets/about-painting.png"></Image>
+              <Image w={{base:"45vw", xl:"40vw"}} minW="200px" bottom="-150px" right="-30%" position="absolute" zIndex="2" src="./assets/about-painting.png"></Image>
             </Box>
           </Flex>
         </Box>
