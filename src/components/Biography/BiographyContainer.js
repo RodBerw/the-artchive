@@ -36,11 +36,11 @@ export default function BiographyContainer(props){
                         Avaiable works
                     </Text>
                     <Flex gap="1vw">
-                        {/* {biography.articlesId.map((articleId, i) => (
+                        {biography.articlesId.map((articleId, i) => (
                             <Box>
                                 <Article id={articleId}/>
                             </Box>
-                        ))} */}
+                        ))}
                     </Flex>
                 </Flex>
             </Flex>
