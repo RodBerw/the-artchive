@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Article from "../Articles/Article";
@@ -24,7 +24,13 @@ export default function BiographyContainer(props){
         <Box position="relative" w="80%" m="auto" h="1000px">
             <Flex position="absolute" w="100%" p="0 5% 0 5%" justifyContent="center"  bg="black" mt="50px">
                 <Box w="30%" bgImg="linear-gradient(#00101B, #143544)">
-                    1
+                    <Flex alignItems="center" flexDirection="column">
+                        <Image objectFit="cover" mt="10%" w="80%" aspectRatio="1" src="assets/artists.jpg"></Image>
+                        <Text>1</Text>
+                        <Text>1</Text>
+                        <Text>1</Text>
+                        <Text>1</Text>
+                    </Flex>
                 </Box>
                 <Flex flex="1" flexDirection="column" pl="5%">
                     <Text textStyle="large" textAlign="center" p="20px 0 20px 0">{biography.name}</Text>
@@ -33,14 +39,14 @@ export default function BiographyContainer(props){
                         <Box pointerEvents="none" top="0" w="95%" h="100%" position="absolute" bgImg="linear-gradient(0deg, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 15%);">1</Box>
                     </Box>
                     <Text textStyle="large" m="20px 0 20px 0"> 
-                        Avaiable works
+                        Available works
                     </Text>
                     <Flex gap="1vw">
-                        {biography.articlesId.map((articleId, i) => (
+                        {/* {biography.articlesId.map((articleId, i) => (
                             <Box>
                                 <Article id={articleId}/>
                             </Box>
-                        ))}
+                        ))} */}
                     </Flex>
                 </Flex>
             </Flex>
