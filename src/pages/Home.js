@@ -9,14 +9,12 @@ import About from "../components/About/About";
 export default function Home() {
   return (
     <div>
-      <Box h="3000px">
         <Background />
-        <SideDescription />
+        <SideDescription text="HOME"/>
         <Banner />
         <StartButton />
         <About />
         <SearchBy />
-      </Box>
     </div>
   );
 }
