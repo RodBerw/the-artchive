@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Article from "../Articles/Article";
 
 export default function BiographyContainer(props){
-    const [biography, setBiography] = useState(0);
+    const [biography, setBiography] = useState([]);
     const [biographyId, setBiographyId] = useState(0);
     const url = "artistsBio.json";
 
@@ -14,10 +14,9 @@ export default function BiographyContainer(props){
                 const resp = await axios.get(url)
                 setBiography(resp.data.biographies[biographyId])
             }catch(error){
-                console.log(error)
+                console.error(error)
             }
-        } 
-
+        }    
         getBiography();
     }, [])
 
@@ -37,11 +36,11 @@ export default function BiographyContainer(props){
                         Avaiable works
                     </Text>
                     <Flex gap="1vw">
-                        {biography.articlesId.map((articleId, i) => (
+                        {/* {biography.articlesId.map((articleId, i) => (
                             <Box>
                                 <Article id={articleId}/>
                             </Box>
-                        ))}
+                        ))} */}
                     </Flex>
                 </Flex>
             </Flex>
