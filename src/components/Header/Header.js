@@ -33,6 +33,9 @@ export default function Header() {
               fontWeight="500"
               textAlign="center"
               whiteSpace="nowrap"
+              display="inline-block"
+              onClick={() => (window.location.href = "/")}
+              _hover={{ cursor: "pointer" }}
             >
               THE ARTCHIVE
             </Text>

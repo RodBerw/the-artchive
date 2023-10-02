@@ -57,9 +57,10 @@ export default function ArtisitsContainer() {
           flexWrap="wrap"
           gridTemplateColumns={variant}
         >
-          {artists.map((artist, i) => (
-            <Box key={i}>
+          {artists?.map((artist, i) => (
+            <Box _hover={{ cursor: "pointer" }} key={i}>
               <ArtistCard
+                id={artist.id}
                 img={artist.img}
                 date={artist.date}
                 name={artist.name}
