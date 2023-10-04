@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "Rembrandt",
-      "picture": "assets/artists.jpg",
+      "picture": "/assets/artists.jpg",
       "fullName": "Rembrandt Harmenszoon van Rijn",
       "bornDate": "15 July 1606",
       "bornLocation": "Leiden, Dutch Republic",
