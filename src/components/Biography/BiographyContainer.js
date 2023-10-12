@@ -7,14 +7,14 @@ import { json, useNavigate, useParams } from "react-router-dom";
 export default function BiographyContainer(props) {
   const [biography, setBiography] = useState([]);
   const [loading, setLoading] = useState(true);
-  const url = "/artistsBio.json";
+  const url = "http://localhost:3001/api/biographies";
   const { biographyId } = useParams();
 
   useEffect(() => {
     async function getBiography() {
       try {
         const resp = await axios.get(url);
-        setBiography(resp.data.biographies[biographyId]);
+        setBiography(resp.data[biographyId]);
         setLoading(false);
       } catch (error) {
         console.error(error);
@@ -58,6 +58,7 @@ export default function BiographyContainer(props) {
                 alignSelf="center"
                 boxShadow="10px 10px 10px #00000070"
                 src={biography.picture}
+                alt="None"
                 mb="20px"
               ></Image>
               <Text

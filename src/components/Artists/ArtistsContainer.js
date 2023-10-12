@@ -17,7 +17,7 @@ export default function ArtisitsContainer() {
   const [artists, setArtists] = useState([]);
   const [plusIconSize, setPlusIconSize] = useState(1);
   const [opacity, setOpacity] = useState(100);
-  const url = "artistsDB.json";
+  const url = "http://localhost:3001/api/artists";
   const variant = useBreakpointValue(
     {
       base: "repeat(auto-fill, minmax(150px,1fr))",
@@ -33,7 +33,7 @@ export default function ArtisitsContainer() {
     async function getArtists() {
       try {
         const resp = await axios.get(url);
-        setArtists(resp.data.artists);
+        setArtists(resp.data);
       } catch (error) {
         console.error(error);
       }
