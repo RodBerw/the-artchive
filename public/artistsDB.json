@@ -1,65 +1,63 @@
-{
-  "artists": [
-    {
-      "id":0,
-      "biographyId":0,
-      "img": "/assets/artists.jpg",
-      "date": "1452-1519",
-      "name": "Leonardo da Vinci"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1599-1660",
-      "name": "Rembrandt Harmenszoon van Rijn"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1840-1926",
-      "name": "Claude Monet"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1864-1901",
-      "name": "Henri de Toulouse-Lautrec"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1867-1916",
-      "name": "Frida Kahlo"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1881-1973",
-      "name": "Pablo Picasso"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1893-1957",
-      "name": "Fernand Léger"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1898-1967",
-      "name": "Salvador Dalí"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1904-1989",
-      "name": "Jackson Pollock"
-    },
-    {
-      "id":0,
-      "img": "/assets/artists.jpg",
-      "date": "1928-1987",
-      "name": "Jean-Michel Basquiat"
-    }
-  ]
-}
+[
+  {
+    "id": 0,
+    "biographyId": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1452-1519",
+    "name": "Leonardo da Vinci"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1599-1660",
+    "name": "Rembrandt Harmenszoon van Rijn"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1840-1926",
+    "name": "Claude Monet"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1864-1901",
+    "name": "Henri de Toulouse-Lautrec"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1867-1916",
+    "name": "Frida Kahlo"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1881-1973",
+    "name": "Pablo Picasso"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1893-1957",
+    "name": "Fernand Léger"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1898-1967",
+    "name": "Salvador Dalí"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1904-1989",
+    "name": "Jackson Pollock"
+  },
+  {
+    "id": 0,
+    "img": "/assets/artists.jpg",
+    "date": "1928-1987",
+    "name": "Jean-Michel Basquiat"
+  }
+]
