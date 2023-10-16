@@ -12,8 +12,14 @@
     "educationLocation": "Pieter Lastman",
     "movement": ["Dutch Golden Age", "Baroque"],
     "text": "Rembrandt van Rijn (1606-1669) was born in Leiden, the son of a miller. After finishing Latin School, his parents enrolled him at Leiden University. Rembrandt soon dropped out and became an apprentice painter under Jacob van Swanenburch in Leiden, and later Pieter Lastman in Amsterdam. Back in Leiden, he set up as an independent artist together with Jan Lievens. At this time, Rembrandt mainly painted biblical scenes in a precise style and with vibrant colours.\n\nIn 1631, he moved to Amsterdam where he received numerous commissions for portraits. His many pupils included Ferdinand Bol, Govert Flinck and Carel Fabritius. In this period, Rembrandt developed a more powerful chiaroscuro, a looser brush and a greater sense of drama. He focused more on historical scenes, and made numerous etchings and drawings.\n\nIn 1634, Rembrandt married Saskia Uylenburgh. They had a son, Titus, in 1641. Then a year later Saskia died. Later, in 1654, Rembrandt had a daughter with Hendrickje Stoffels. By now, he had accumulated huge debts and was forced to sell his house and property. He died in 1669 and was buried in Amsterdam's Westerkerk.",
-    "availableWorks": [],
-    "articlesId": []
+    "availableWorks": [
+      {
+        "artiworkd_id": 0,
+        "artist": "",
+        "name": "",
+        "picture": ""
+      }
+    ]
   },
   {
     "id": 1,
