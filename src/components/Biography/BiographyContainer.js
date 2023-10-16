@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Image } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Article from "../Articles/Article";
@@ -31,7 +31,6 @@ export default function BiographyContainer(props) {
         </Box>
       ) : (
         <Flex
-          position="absolute"
           w="100%"
           p="0 5% 0 5%"
           justifyContent="center"
@@ -146,6 +145,14 @@ export default function BiographyContainer(props) {
           </Flex>
         </Flex>
       )}
+      <Flex justifyContent="end" gap="1vw" mt="10px">
+        <Button variant="outline" color="white">
+          Edit
+        </Button>
+        <Button bg="#8d3939" color="white">
+          Delete
+        </Button>
+      </Flex>
     </Box>
   );
 }

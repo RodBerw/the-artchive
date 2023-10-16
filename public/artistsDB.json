@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "biographyId": 0,
+    "biography_id": 0,
     "img": "/assets/artists.jpg",
     "date": "1452-1519",
     "name": "Leonardo da Vinci"
