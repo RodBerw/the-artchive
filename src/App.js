@@ -6,6 +6,7 @@ import Artists from "./pages/Artists";
 import Header from "./components/Header/Header";
 import Outro from "./pages/Outro";
 import Biography from "./pages/Biography";
+import RegisterArtist from "./pages/RegisterArtist";
 import NotFound from "./pages/NotFound";
 import { Box } from "@chakra-ui/react";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" Component={Home} />
         <Route path="/artists" Component={Artists} />
         <Route path="/biography/:biographyId" Component={Biography} />
+        <Route path="/register" Component={RegisterArtist} />
         <Route path="/outro" Component={Outro} />
         <Route path="*" Component={NotFound} />
       </Routes>
