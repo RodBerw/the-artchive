@@ -6,6 +6,7 @@ import {
   InputGroup
 } from "@chakra-ui/react";
 import { useState } from "react";
+import RegisterForm from "./RegisterForm";
 
 export default function RegisterArtistContainter() {
   const [picture, setPicture] = useState();
@@ -39,17 +40,10 @@ export default function RegisterArtistContainter() {
               }}
             />
           </InputGroup>
-          {/* <Flex
-            bg="#0E0E0E"
-            h="50px"
-            alignItems="center"
-            p="0 5% 0 5%"
-            color="#717273"
-          >
-            <Text w="90%">File.png</Text>
-          </Flex> */}
         </Flex>
-        <Flex flex="1">1</Flex>
+        <Flex flex="1">
+          <RegisterForm/>
+        </Flex>
       </Flex>
     </Box>
   );
