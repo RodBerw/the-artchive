@@ -1,8 +1,7 @@
-import { Box, Flex, Text, Image, Button } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Article from "../Articles/Article";
-import { json, useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function BiographyContainer(props) {
   const [biography, setBiography] = useState([]);

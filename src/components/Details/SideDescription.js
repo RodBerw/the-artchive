@@ -1,8 +1,8 @@
-import { Box, Center, Flex, Text } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { useState } from "react";
 
 export default function SideDescription(props) {
-  const [text, setText] = useState(props.text);
+  const [text] = useState(props.text);
   return (
     <div>
       <Flex

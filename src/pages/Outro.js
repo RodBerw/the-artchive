@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Icon } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 export default function Outro(){
     return(
         <div>

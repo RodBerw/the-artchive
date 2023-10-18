@@ -1,4 +1,4 @@
-import { Box, Image, Text, Flex, extendTheme } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
 export default function About() {
   const m = { base: "-50px", md: "-75px", xl: "-100px" };

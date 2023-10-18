@@ -1,4 +1,4 @@
-import { Box, Image, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 
 export default function Logo() {
   return (

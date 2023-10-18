@@ -1,17 +1,10 @@
 import {
   Box,
   Flex,
-  Text,
   Image,
-  Button,
-  Icon,
   Input,
-  InputGroup,
-  InputRightElement,
-  Square,
+  InputGroup
 } from "@chakra-ui/react";
-import { Upload } from "@mui/icons-material";
-import UploadIcon from "@mui/icons-material/Upload";
 import { useState } from "react";
 
 export default function RegisterArtistContainter() {

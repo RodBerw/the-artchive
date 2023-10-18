@@ -1,5 +1,4 @@
 import { Box, Center, Flex, Text } from "@chakra-ui/react";
-import { useEffect } from "react";
 
 export default function StartButton() {
   function Scroll() {

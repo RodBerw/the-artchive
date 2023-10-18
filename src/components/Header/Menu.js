@@ -1,5 +1,4 @@
-import { Text, Flex } from "@chakra-ui/react";
-import Header from "./Header";
+import { Flex, Link } from "@chakra-ui/react";
 
 export default function Menu(props) {
   return (
@@ -19,34 +18,34 @@ export default function Menu(props) {
           textStyle="basic"
           letterSpacing="10px"
         >
-          <Text
+          <Link
             _hover={{ transform: "scale(1.05)" }}
             layerStyle="textButton"
-            onClick={() => (window.location.href = "/")}
+            href="/"
           >
             HOME
-          </Text>
-          <Text
+          </Link>
+          <Link
             _hover={{ transform: "scale(1.1)" }}
             layerStyle="textButton"
-            onClick={() => (window.location.href = "/artists")}
+            href="/artists"
           >
             ARTISTS
-          </Text>
-          <Text
+          </Link>
+          <Link
             _hover={{ transform: "scale(1.1)" }}
             layerStyle="textButton"
-            onClick={() => (window.location.href = "/artworks")}
+            href="/artworks"
           >
             ARTWORKS
-          </Text>
-          <Text
+          </Link>
+          <Link
             _hover={{ transform: "scale(1.1)" }}
             layerStyle="textButton"
-            onClick={() => (window.location.href = "/about")}
+            href="/about"
           >
             ABOUT
-          </Text>
+          </Link>
         </Flex>
       </Flex>
     </div>

@@ -1,10 +1,9 @@
-import { Box, Flex, Text, Icon } from "@chakra-ui/react";
+import About from "../components/About/About";
+import Background from "../components/Background/Background";
 import Banner from "../components/Banner/Banner";
 import StartButton from "../components/Banner/StartButton";
-import Background from "../components/Background/Background";
-import SearchBy from "../components/SearchBy/SearchBy";
 import SideDescription from "../components/Details/SideDescription";
-import About from "../components/About/About";
+import SearchBy from "../components/SearchBy/SearchBy";
 
 export default function Home() {
   return (

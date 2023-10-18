@@ -49,9 +49,9 @@ export default function SearchBy() {
           flexWrap="wrap"
           rowGap="10px"
         >
-          <Category align="start" img="artists.jpg" text="ARTISTS" />
-          <Category align="center" img="artworks.jpg" text="ARTWORKS" />
-          <Category align="end" img="articles.jpg" text="ARTCLES & REVIEWS" />
+          <Category align="start" img="artists.jpg" text="ARTISTS" link="/artists" />
+          <Category align="center" img="artworks.jpg" text="ARTWORKS" link="/artworks" />
+          <Category align="end" img="articles.jpg" text="ARTCLES & REVIEWS" link="/articles" />
         </Flex>
       </Flex>
     </div>

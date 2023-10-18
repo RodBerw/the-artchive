@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Icon } from "@chakra-ui/react";
+import { Box, Flex, Icon, Link } from "@chakra-ui/react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import Menu from "./Menu";
@@ -26,7 +26,7 @@ export default function Header() {
         >
           <Box flex="1"></Box>
           <Box flex="1" textAlign="center">
-            <Text
+            <Link
               fontFamily="Bacasime Antique, serif;"
               color="white"
               fontSize={{ base: "1.25em", md: "1.5em", xl: "1.75em" }}
@@ -34,11 +34,11 @@ export default function Header() {
               textAlign="center"
               whiteSpace="nowrap"
               display="inline-block"
-              onClick={() => (window.location.href = "/")}
               _hover={{ cursor: "pointer" }}
+              href="/"
             >
               THE ARTCHIVE
-            </Text>
+            </Link>
           </Box>
           <Box
             flex="1"

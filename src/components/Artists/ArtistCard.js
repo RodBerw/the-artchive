@@ -1,4 +1,4 @@
-import { Box, Square, Flex, Text, Grid } from "@chakra-ui/react";
+import { Flex, Square, Text } from "@chakra-ui/react";
 
 export default function ArtistCard(props) {
   return (

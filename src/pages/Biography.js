@@ -1,7 +1,6 @@
-import { Box, Flex, Text, Icon } from "@chakra-ui/react";
 import Background from "../components/Background/Background";
-import SideDescription from "../components/Details/SideDescription";
 import BiographyContainer from "../components/Biography/BiographyContainer";
+import SideDescription from "../components/Details/SideDescription";
 
 export default function Bigraphy() {
     return (
