@@ -27,6 +27,12 @@ const theme = extendTheme({
       cursor: "pointer",
       display: "inline-block",
     },
+    textInput: {
+      height: "50px",
+      border: "none",
+      backgroundColor: "#0E0E0E",
+      color: "white",
+    },
   },
 });
 
