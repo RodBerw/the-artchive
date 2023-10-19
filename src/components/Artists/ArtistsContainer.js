@@ -5,7 +5,8 @@ import {
   Grid,
   Icon,
   Square,
-  useBreakpointValue
+  Link,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import AddIcon from "@mui/icons-material/Add";
 import axios from "axios";
@@ -66,44 +67,45 @@ export default function ArtisitsContainer() {
               />
             </Box>
           ))}
-          <Square bgSize="100%" aspectRatio="1">
-            <Center
-              position="relative"
-              w="100%"
-              h="100%"
-              onClick={{}}
-              onMouseEnter={() => addTabToggle()}
-              onMouseLeave={() => addTabToggle()}
-              _hover={{ cursor: "pointer" }}
-            >
-              <Icon
-                zIndex="2"
-                as={AddIcon}
-                color="#133749"
-                w="150px"
-                h="150px"
-                transition="transform .25s"
-                transform={`scale(${plusIconSize});`}
-              />
-              <Flex w="100%" h="100%" position="absolute">
-                <Square
-                  zIndex="1"
-                  position="absolute"
-                  size="100%"
-                  bgColor="#00070b"
-                  transition="opacity .25s"
-                  bgImg="linear-gradient(#00070b, #0a2031)"
-                  opacity={`${opacity}%`}
-                ></Square>
-                <Square
-                  position="absolute"
-                  size="100%"
-                  bgColor="#00070b"
-                  bgImg="linear-gradient(#00070b, #0e2d45)"
-                ></Square>
-              </Flex>
-            </Center>
-          </Square>
+          <Link href="/register">
+            <Square bgSize="100%" aspectRatio="1">
+              <Center
+                position="relative"
+                w="100%"
+                h="100%"
+                onMouseEnter={() => addTabToggle()}
+                onMouseLeave={() => addTabToggle()}
+                _hover={{ cursor: "pointer" }}
+              >
+                <Icon
+                  zIndex="2"
+                  as={AddIcon}
+                  color="#133749"
+                  w="150px"
+                  h="150px"
+                  transition="transform .25s"
+                  transform={`scale(${plusIconSize});`}
+                />
+                <Flex w="100%" h="100%" position="absolute">
+                  <Square
+                    zIndex="1"
+                    position="absolute"
+                    size="100%"
+                    bgColor="#00070b"
+                    transition="opacity .25s"
+                    bgImg="linear-gradient(#00070b, #0a2031)"
+                    opacity={`${opacity}%`}
+                  ></Square>
+                  <Square
+                    position="absolute"
+                    size="100%"
+                    bgColor="#00070b"
+                    bgImg="linear-gradient(#00070b, #0e2d45)"
+                  ></Square>
+                </Flex>
+              </Center>
+            </Square>
+          </Link>
         </Grid>
       </Flex>
     </div>

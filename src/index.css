@@ -22,8 +22,20 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
 
-  
+input[type="file"] {
+  display: none;
+}
+
+::placeholder {
+  color: #727272 !important;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #727272 !important;
 }
 
 ::-webkit-scrollbar {
@@ -32,18 +44,16 @@ code {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #00000000; 
+  background: #00000000;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffffff; 
+  background: #ffffff;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
-
-
