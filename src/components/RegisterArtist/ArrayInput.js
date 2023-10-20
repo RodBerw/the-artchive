@@ -1,5 +1,6 @@
 import { Flex, Icon, Input, Text, Box } from "@chakra-ui/react";
 import AddIcon from "@mui/icons-material/Add";
+import ClearIcon from "@mui/icons-material/Clear";
 import { useEffect, useState } from "react";
 
 export default function ArrayInput(props) {
@@ -8,10 +9,10 @@ export default function ArrayInput(props) {
 
   useEffect(() => {
     props.data(array);
-  });
+  }, [array]);
 
   return (
-    <Flex flexDirection="column" flex="1" mb="15px">
+    <Flex flexDirection="column" flex="1">
       <Flex bg="#0E0E0E" alignItems="center">
         <Input
           type="text"
@@ -46,12 +47,13 @@ export default function ArrayInput(props) {
         overflowY="scroll"
         mt="15px"
         rowGap="15px"
+        mr="-10px"
       >
         {array &&
           array.map((value, i) => (
-            <Flex w="30%">
+            <Flex w="31.6%" mb="15px">
               <Flex
-                w="90%"
+                w="85%"
                 key={i}
                 justifyContent="center"
                 alignItems="center"
@@ -68,7 +70,21 @@ export default function ArrayInput(props) {
                   {value}
                 </Text>
               </Flex>
-              <Box bg="red" w="10%">1</Box>
+              <Flex
+                bg="#0E0E0E"
+                transition="background .25s"
+                _hover={{ bg: "#75170b" }}
+                flex="1"
+                alignItems="center"
+                cursor="pointer"
+                onClick={() => {
+                  const newArray = [...array];
+                  newArray.splice(i, 1);
+                  setArray(newArray);
+                }}
+              >
+                <Icon as={ClearIcon} color="gray"></Icon>
+              </Flex>
             </Flex>
           ))}
       </Flex>
