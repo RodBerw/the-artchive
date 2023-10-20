@@ -20,6 +20,10 @@ const theme = extendTheme({
       letterSpacing: "2px",
       fontSize: { base: ".25em", md: ".5em", xl: ".75em" },
     },
+    error: {
+      color: "red",
+      fontSize: { base: ".5em", md: ".75em", xl: "1em" },
+    },
   },
   layerStyles: {
     textButton: {
