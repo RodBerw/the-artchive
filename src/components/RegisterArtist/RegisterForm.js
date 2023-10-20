@@ -1,4 +1,4 @@
-import { Flex, FormControl, Grid, Input, Text } from "@chakra-ui/react";
+import { Flex, FormControl, Grid, Input, Text, Textarea } from "@chakra-ui/react";
 import { useState } from "react";
 import ArrayInput from "./ArrayInput";
 
@@ -15,12 +15,12 @@ export default function RegisterForm() {
   };
 
   return (
-    <Flex w="100%" ml="5%" flexDirection="column">
+    <Flex w="100%" ml={{base:"0", md:"5%"}} flexDirection="column">
       <Text textStyle="large" mb="20px">
         Biography
       </Text>
       <FormControl>
-        <Grid gap="15px" templateColumns="1fr 1fr" rowGap="15px" border="none">
+        <Grid gap="15px" templateColumns={{base:"1fr", md:"1fr", xl:"1fr 1fr"}} rowGap="15px" border="none">
           <Input type="text" style={textInputStyle} placeholder="Name"></Input>
           <Input
             type="text"
@@ -68,6 +68,8 @@ export default function RegisterForm() {
             }}
           />
         </Grid>
+        <Textarea style={textInputStyle} w="100%" h="250px !important" textAlign="start" placeholder="Description" resize="none" whiteSpace="pre-line" overflowX="hidden" overflowY="scroll">
+        </Textarea>
       </FormControl>
     </Flex>
   );

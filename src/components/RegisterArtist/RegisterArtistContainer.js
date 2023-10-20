@@ -1,4 +1,4 @@
-import { Box, Flex, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Icon, Image, Text, Grid } from "@chakra-ui/react";
 import UploadIcon from "@mui/icons-material/Upload";
 import { useState } from "react";
 import RegisterForm from "./RegisterForm";
@@ -8,18 +8,20 @@ export default function RegisterArtistContainter() {
 
   return (
     <Box position="relative" w="80%" m="auto" h="1000px">
-      <Flex w="100%" p="5%" justifyContent="center" bg="black" mt="50px">
+      <Grid w="100%" p="5%" justifyContent="center" bg="black" mt="50px" templateColumns={{base:"1fr", md:"1fr 3fr", xl:"1fr 3fr"}}>
         <Flex
-          w="25%"
           flexDirection="column"
-          alignItems="center"
+          alignItems="start"
+          m={{base:"auto", md:"0"}}
           color="#717273"
+          w={{base:"50%", md:"100%"}}
+          mb="15px"
         >
-          <Flex position="relative" flexDirection="column">
+          <Flex position="relative" flexDirection="column" w="100%">
             <Image
-              w="18vw"
-              h="18vw"
               objectFit="cover"
+              w="100%"
+              aspectRatio="1"
               src={
                 picture == null
                   ? "/assets/artist-default.jpg"
@@ -72,7 +74,7 @@ export default function RegisterArtistContainter() {
         <Flex flex="1">
           <RegisterForm />
         </Flex>
-      </Flex>
+      </Grid>
     </Box>
   );
 }
