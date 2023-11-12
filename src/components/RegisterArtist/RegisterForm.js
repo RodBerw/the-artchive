@@ -34,6 +34,9 @@ export default function RegisterForm() {
     borderRadius: "0",
   };
 
+  const movementVal = false;
+  const educationVal = false; 
+
   useEffect(() => {
     const data = formData;
     setFormData(data)
@@ -65,7 +68,7 @@ export default function RegisterForm() {
               placeholder="Name"
               onChange={handleInputChange}
             ></Input>
-            {formData.name.match(/\d+/g) && !formData.name.match(/^[A-Za-z]+$/) && (
+            {!formData.name.match(/^[A-Za-z]+$/) && formData.name != "" && (
               <Text textStyle="error">Invalid name</Text>
             )}
           </Flex>
@@ -77,7 +80,7 @@ export default function RegisterForm() {
               placeholder="Full name"
               onChange={handleInputChange}
             ></Input>
-            {formData.fullName.match(/\d+/g) && !formData.fullName.match(/^[A-Za-z]+$/) && (
+            {!formData.fullName.match(/^[A-Za-z]+$/) && formData.fullName != "" && (
               <Text textStyle="error">Invalid full name</Text>
             )}
           </Flex>
@@ -89,7 +92,7 @@ export default function RegisterForm() {
                 style={textInputStyle}
                 placeholder="Born location"
               ></Input>
-              {formData.bornLocation.match(/\d+/g) && !formData.bornLocation.match(/^[A-Za-z]+$/) && (
+              {formData.bornLocation.match(/\d+/g) && !formData.bornLocation.match(/^[A-Za-z]+$/) && formData.bornLocation != "" && (
               <Text textStyle="error">Invalid full name</Text>
               )}
             </Flex>
@@ -100,33 +103,40 @@ export default function RegisterForm() {
             ></Input>
           </Flex>
           <Flex gap="15px">
-            <Input
-              type="text"
-              style={textInputStyle}
-              placeholder="Death location"
-            ></Input>
+            <Flex flexDirection="column" rowGap="15px">
+              <Input
+                type="text"
+                style={textInputStyle}
+                placeholder="Death location"
+              ></Input>
+              {formData.deathLocation.match(/\d+/g) && !formData.deathLocation.match(/^[A-Za-z]+$/) && formData.deathLocation != "" && (
+              <Text textStyle="error">Invalid death location</Text>
+              )}
+            </Flex>
             <Input
               type="date"
               style={textInputStyle}
               placeholder="Death date"
             ></Input>
           </Flex>
-          <ArrayInput
-            placeholder="Education"
-            style={textInputStyle}
-            array={education}
-            data={(data) => {
-              setEducation(data);
-            }}
-          />
-          <ArrayInput
-            placeholder="Movement"
-            style={textInputStyle}
-            array={movements}
-            data={(data) => {
-              setMevements(data);
-            }}
-          />
+            <ArrayInput
+              placeholder="Education"
+              style={textInputStyle}
+              array={education}
+              data={(data) => {
+                setEducation(data);
+              }}
+              errorMessage="Invalid education"
+            />
+            <ArrayInput
+              placeholder="Movement"
+              style={textInputStyle}
+              array={movements}
+              data={(data) => {
+                setMevements(data);
+              }}
+              errorMessage="Invalid movement"
+            />
         </Grid>
         <Textarea
           style={textInputStyle}
