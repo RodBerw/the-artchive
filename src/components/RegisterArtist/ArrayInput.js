@@ -13,30 +13,36 @@ export default function ArrayInput(props) {
 
   return (
     <Flex flexDirection="column" flex="1">
-      <Flex bg="#0E0E0E" alignItems="center">
-        <Input
-          type="text"
-          placeholder={props.placeholder}
-          style={props.style}
-          onChange={(e) => {
-            setValue(e.target.value);
-          }}
-          value={value}
-          id={props.id}
-        />
-        <Icon
-          w="50px"
-          h="50px"
-          as={AddIcon}
-          cursor="pointer"
-          color="#727272"
-          onClick={() => {
-            if (value !== "" && !array.includes(value)) {
-              setArray([...array, value]);
-              setValue("");
-            }
-          }}
-        />
+      <Flex flexDirection="column" rowGap="15px">
+        <Flex bg="#0E0E0E" alignItems="center">
+          <Input
+            type="text"
+            placeholder={props.placeholder}
+            style={props.style}
+            onChange={(e) => {
+              setValue(e.target.value)
+            }}
+            value={value}
+            id={props.id}
+          />
+          <Icon
+            w="50px"
+            h="50px"
+            as={AddIcon}
+            cursor="pointer"
+            color="#727272"
+            onClick={() => {
+              if (value !== "" && !array.includes(value) &&
+              value.match(/^[A-Za-z]+$/)) {
+                setArray([...array, value]);
+                setValue("");
+              }
+            }}
+          />
+        </Flex>
+        {!value.match(/^[A-Za-z]+$/) && value != "" && (
+              <Text textStyle="error">{props.errorMessage}</Text>
+              )}
       </Flex>
       <Flex
         gap="2.5%"
