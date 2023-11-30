@@ -60,7 +60,7 @@ export default function ArtisitsContainer() {
           {artists?.map((artist, i) => (
             <Box _hover={{ cursor: "pointer" }} key={i}>
               <ArtistCard
-                id={artist.id}
+                id={artist._id}
                 img={artist.img}
                 date={artist.date}
                 name={artist.name}

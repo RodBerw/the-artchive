@@ -5,7 +5,7 @@ const schema = mongoose.Schema({
   painting: { type: String, required: true },
   artist: { type: String, required: true },
   year: { type: String, required: true },
-  picture: { type: File, required: true },
+  picture: { type: String, required: true },
 });
 
 module.exports = mongoose.model("artworks", schema);

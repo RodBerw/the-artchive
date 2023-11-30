@@ -11,4 +11,4 @@ class ArtworkController {
   }
 }
 
-module.exports = new ArtiworkController();
+module.exports = new ArtworkController();

@@ -1,26 +1,46 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Artwork from "../Artwork/Artwork";
 
 export default function BiographyContainer(props) {
   const [biography, setBiography] = useState([]);
+  const [artworks, setArtwoks] = useState([]);
   const [loading, setLoading] = useState(true);
   const url = "http://localhost:3001/api/biographies";
-  const { biographyId } = useParams();
+  const artworksUrl = "http://localhost:3001/api/artworks/";
+  const { _id } = useParams();
 
   useEffect(() => {
-    async function getBiography() {
+    async function GetBiography() {
       try {
         const resp = await axios.get(url);
-        setBiography(resp.data[biographyId]);
+        setBiography(
+          resp.data.filter((biography) => biography.artist_id == _id)[0]
+        );
         setLoading(false);
       } catch (error) {
         console.error(error);
       }
     }
-    getBiography();
-  }, [biographyId]);
+
+    async function GetArworks() {
+      try {
+        const resp = await axios.get(artworksUrl);
+        setArtwoks(
+          resp.data.filter(
+            (artwork) => artwork.artist_id == biography.artist_id
+          )
+        );
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    GetBiography();
+    GetArworks();
+  }, [_id]);
 
   return (
     <Box position="relative" w="80%" m="auto" h="1000px">
@@ -134,6 +154,21 @@ export default function BiographyContainer(props) {
             <Text textStyle="large" m="20px 0 20px 0">
               Available works
             </Text>
+            <Flex>
+              <Grid templateColumns="1fr 1fr 1fr">
+                {artworks.map((artwork, i) => (
+                  <Artwork
+                    key={i}
+                    infos={{
+                      painting: artwork.painting,
+                      artist: artwork.artist,
+                      year: artwork.year,
+                      picture: artwork.picture,
+                    }}
+                  />
+                ))}
+              </Grid>
+            </Flex>
             <Flex gap="1vw">
               {/* {biography.articlesId.map((articleId, i) => (
                             <Box>
