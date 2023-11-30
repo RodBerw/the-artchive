@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/artists" Component={Artists} />
-        <Route path="/biography/:biographyId" Component={Biography} />
+        <Route path="/biography/:_id" Component={Biography} />
         <Route path="/register" Component={RegisterArtist} />
         <Route path="/outro" Component={Outro} />
         <Route path="*" Component={NotFound} />
